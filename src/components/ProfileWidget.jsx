@@ -42,10 +42,10 @@ function ProfileWidget() {
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/1d6e2a7bdd7cae2f6ee72c376a30e13a584b7613bee749d26c011f7d746bbf4e?placeholderIfAbsent=true&apiKey=fdc97f1298d9417ba73f632a312daddd"
-          className="object-contain self-center w-6 aspect-square"
+          className="object-contain self-center w-6 aspect-square cursor-pointer"
           alt="Info"
         />
-        <div className="grid grid-cols-2 gap-px items-start mt-[5vw] w-fit rounded-sm max-md:mt-10">
+        <div className="grid grid-cols-2 gap-px items-start mt-[5vw] w-fit rounded-sm max-md:mt-10 cursor-pointer">
           {[...Array(6)].map((_, index) => (
             <div key={index} className={`flex rounded-sm bg-neutral-600 h-[9px] w-[9px]`} />
           ))}

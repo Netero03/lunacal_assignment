@@ -6,9 +6,7 @@ function GalleryWidget() {
     { src: "https://cdn.builder.io/api/v1/image/assets/TEMP/9ed1b354b38a4bf52cc5a4beab8265449982351f87c824931294a60fc01ccc65?placeholderIfAbsent=true&apiKey=fdc97f1298d9417ba73f632a312daddd", alt: "Gallery image 1" },
     { src: "https://cdn.builder.io/api/v1/image/assets/TEMP/9ed1b354b38a4bf52cc5a4beab8265449982351f87c824931294a60fc01ccc65?placeholderIfAbsent=true&apiKey=fdc97f1298d9417ba73f632a312daddd", alt: "Gallery image 2" },
     { src: "https://cdn.builder.io/api/v1/image/assets/TEMP/9ed1b354b38a4bf52cc5a4beab8265449982351f87c824931294a60fc01ccc65?placeholderIfAbsent=true&apiKey=fdc97f1298d9417ba73f632a312daddd", alt: "Gallery image 3" },
-    { src: "https://cdn.builder.io/api/v1/image/assets/TEMP/9ed1b354b38a4bf52cc5a4beab8265449982351f87c824931294a60fc01ccc65?placeholderIfAbsent=true&apiKey=fdc97f1298d9417ba73f632a312daddd", alt: "Gallery image 4" },
-    { src: "https://cdn.builder.io/api/v1/image/assets/TEMP/9ed1b354b38a4bf52cc5a4beab8265449982351f87c824931294a60fc01ccc65?placeholderIfAbsent=true&apiKey=fdc97f1298d9417ba73f632a312daddd", alt: "Gallery image 5" },
-  ];
+    ];
 
   const [images, setImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -57,10 +55,10 @@ function GalleryWidget() {
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/1d6e2a7bdd7cae2f6ee72c376a30e13a584b7613bee749d26c011f7d746bbf4e?placeholderIfAbsent=true&apiKey=fdc97f1298d9417ba73f632a312daddd"
-          className="object-contain self-center w-6 aspect-square"
+          className="object-contain self-center w-6 aspect-square cursor-pointer"
           alt="Info"
         />
-        <div className="grid grid-cols-2 gap-px items-start mt-[5vw] w-fit rounded-sm max-md:mt-10">
+        <div className="grid grid-cols-2 gap-px items-start mt-[5vw] w-fit rounded-sm max-md:mt-10 cursor-pointer">
           {[...Array(6)].map((_, index) => (
             <div key={index} className={`flex rounded-sm bg-neutral-600 h-[9px] w-[9px]`} />
           ))}
@@ -75,7 +73,7 @@ function GalleryWidget() {
               </h2>
             </div>
             <div className="flex lg:w-[55%] md:gap-3 lg:gap-3 items-center justify-between py-4 lg:py-0">
-              <label className="add-button p-2 lg:p-3 px-4 lg:px-6 flex items-center text-center justify-center cursor-pointer">
+              <label className="add-button p-2 lg:p-3 px-4 lg:px-6 flex items-center text-center justify-center cursor-pointer transition-all duration-300">
                 <input
                   type="file"
                   accept="image/*"

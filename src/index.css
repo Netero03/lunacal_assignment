@@ -53,19 +53,35 @@ body {
 .left-arrow {
   background: linear-gradient(139.14deg, #303439 12.4%, #161718);
   box-shadow: -5px -3px 30px -10px #96BEE7, 4px 5px 20px 5px #101213;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.left-arrow:hover {
+  box-shadow: 0.5px 0.5px 6.9px rgba(255, 255, 255, 0.25)
 }
 
 /* Right Arrow */
 .right-arrow {
   background: linear-gradient(139.14deg, #303439 12.4%, #161718);
   box-shadow: -5px -3px 30px -10px #96BEE7, 4px 5px 20px 5px #101213;
+  transition: box-shadow 0.5s ease-in-out;
+
+}
+
+.right-arrow:hover {
+  box-shadow: 0.5px 0.5px 6.9px rgba(255, 255, 255, 0.25)
 }
 
 /* Add Image Button */
-.add-button{
-background: rgba(255, 255, 255, 0.03);
-box-shadow: -0.5px -0.5px 6.9px rgba(255, 255, 255, 0.25), 9px 10px 7.1px rgba(0, 0, 0, 0.4), inset 0px 0px 48.9064px rgba(255, 255, 255, 0.05), inset 0px 3.26043px 3.26043px rgba(255, 255, 255, 0.15);
-backdrop-filter: blur(52.28px);
-/* Note: backdrop-filter has minimal browser support */
-border-radius: 104px;
+.add-button {
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: -0.5px -0.5px 6.9px rgba(255, 255, 255, 0.25), 9px 10px 7.1px rgba(0, 0, 0, 0.4), inset 0px 0px 48.9064px rgba(255, 255, 255, 0.05), inset 0px 3.26043px 3.26043px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(52.28px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 104px;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.add-button:hover {
+  box-shadow: 0.5px 0.5px 6.9px rgba(255, 255, 255, 0.25)
 }
