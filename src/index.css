@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar styling for SimpleBar */
+.simplebar-scrollbar:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(135deg, #cdcdcd, #4A4E54);
+  /* Gradient color */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  /* Optional: Add shadow */
+}
+
+/* Optional: Customizing the track */
+.simplebar-track {
+  background-color: transparent;
+}
+
+/* Optional: Customizing the scrollbar width */
+.simplebar-scrollbar {
+  width: 8px;
+}
+
+/* Left Arrow */
+.left-arrow {
+  background: linear-gradient(139.14deg, #303439 12.4%, #161718);
+  box-shadow: -5px -3px 30px -10px #96BEE7, 4px 5px 20px 5px #101213;
+}
+
+/* Right Arrow */
+.right-arrow {
+  background: linear-gradient(139.14deg, #303439 12.4%, #161718);
+  box-shadow: -5px -3px 30px -10px #96BEE7, 4px 5px 20px 5px #101213;
+}
+
+/* Add Image Button */
+.add-button{
+background: rgba(255, 255, 255, 0.03);
+box-shadow: -0.5px -0.5px 6.9px rgba(255, 255, 255, 0.25), 9px 10px 7.1px rgba(0, 0, 0, 0.4), inset 0px 0px 48.9064px rgba(255, 255, 255, 0.05), inset 0px 3.26043px 3.26043px rgba(255, 255, 255, 0.15);
+backdrop-filter: blur(52.28px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 104px;
+}
